@@ -5,6 +5,8 @@ function login() {
     let enteredPassword = prompt(`Greetings, Commander Ikari.\nPlease enter the password.`);
 
     if (enteredPassword === `TheMaster`) {
+      // NB The password entered is not hidden;
+      // couldn't find a way to hide it when using console prompt
       alert(`Welcome!`);
     } else if (enteredPassword === `` || enteredPassword === null) {
         alert(`Canceled`);
